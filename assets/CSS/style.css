@@ -19,6 +19,7 @@ body {
     font-size: 48px;
     font-weight: bold;
     font-family: 'Tangerine', cursive;
+    text-shadow: 4px 4px 4px #aaa;
 }
 
 .panel-title {
@@ -32,8 +33,53 @@ th {
     font-family: 'Khand', sans-serif;
   }
 
+  .panel-info {
+    border: 2px solid red;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
   .panel-body {
       border: 2px solid red;
       padding: 10px;
       border-radius: 10px;
+  }
+
+  #submit {
+    border-radius: 4px;
+    background-color: dodgerblue;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  #submit span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #submit span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  #submit:hover span {
+    padding-right: 25px;
+  }
+  
+  #submit:hover span:after {
+    opacity: 1;
+    right: 0;
   }
