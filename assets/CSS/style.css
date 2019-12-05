@@ -1,7 +1,22 @@
 body {
-    background-color: darkgray;
+    background-color: white;
 }
 
 .jumbotron {
     background-color: dodgerblue;
+}
+
+#header {
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+    font-weight: bold;
+    font-family: 'Tangerine', cursive;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+#belowHeader {
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+    font-weight: bold;
+    font-family: 'Tangerine', cursive;
 }
