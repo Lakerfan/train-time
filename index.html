@@ -15,6 +15,9 @@
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <!-- Style Sheet -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <!-- Firebase Link-->
     <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
 </head>
 
@@ -26,29 +29,30 @@
         </div>
 
         <div class="row">
-            <div class="col-sm-6 col-sm-6">
-                <div class="panel">
-                    <h3 class="panel-title">Train Schedule</h3>
+            <div class="col-xs-12 col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Train Schedule</h3>
+
+                    </div>
 
                 </div>
+                <div class="panel-info">
+                    <table class="table table-hover" id="info-table">
+                        <thead>
+                            <tr>
+                                <th>Train Namer</th>
+                                <th>Destination</th>
+                                <th>Frequency</th>
+                                <th>Next Arrival</th>
+                                <th>Minutes Away</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+
 
             </div>
-            <div class="panel-info">
-                <table class="table table-hover" id="info-table">
-                    <thead>
-                        <tr>
-                            <th>Train Namer</th>
-                            <th>Destination</th>
-                            <th>Frequency</th>
-                            <th>Next Arrival</th>
-                            <th>Minutes Away</th>
-                        </tr>
-                    </thead>
-                </table>
-            </div>
-
-
-        </div>
 </body>
 
 </html>
