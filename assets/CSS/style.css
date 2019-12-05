@@ -20,3 +20,20 @@ body {
     font-weight: bold;
     font-family: 'Tangerine', cursive;
 }
+
+.panel-title {
+    font-weight: bold;
+    font-family: 'Khand', sans-serif;
+    font-size: 18px;
+}
+
+th {
+    font-weight: bold;
+    font-family: 'Khand', sans-serif;
+  }
+
+  .panel-body {
+      border: 2px solid red;
+      padding: 10px;
+      border-radius: 10px;
+  }
