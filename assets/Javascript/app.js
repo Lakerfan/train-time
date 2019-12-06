@@ -26,8 +26,16 @@ var firebaseConfig = {
     var startTime;
     var frequency = 0;
 
+    $(".form-field").on("keyup", function() {
+        var trainfields = $("#train-name").val().trim();
+        var cityfields = $("#destination").val().trim();
+        var timefields = $("#first-train").val().trim();
+        var freqfields = $("#frequency").val().trim();
 
-
-
+        sessionStorage.setItem("train", trainfields);
+        sessionStorage.setItem("city", cityfields);
+        sessionStorage.setItem("time", timefields);
+        sessionStorage.setItem("freq", freqfields);
+      });
 
 });
