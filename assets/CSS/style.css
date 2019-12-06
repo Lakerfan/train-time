@@ -3,7 +3,7 @@ body {
 }
 
 .jumbotron {
-    background-color: dodgerblue;
+    background-color: beige;
 }
 
 #header {
@@ -47,7 +47,7 @@ th {
 
   #submit {
     border-radius: 4px;
-    background-color: dodgerblue;
+    background-color: black;
     border: none;
     color: #FFFFFF;
     text-align: center;
