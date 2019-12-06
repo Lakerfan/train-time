@@ -10,15 +10,24 @@ var firebaseConfig = {
     appId: "1:17943389109:web:d3b95edc0a407fe4"
   };
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+    firebase.initializeApp(firebaseConfig);
+  // Moment.js for the current time
+    function currentTime() {
+    var current = moment().format('LT');
+    $("#currentTime").html(current);
+    setTimeout(currentTime, 1000);
+  };
 
 // Variable for Firebase database
-var database = firebase.database();
+    var database = firebase.database();
 
-var trainName;
-var destination;
-var startTime;
-var frequency = 0;
+    var trainName;
+    var destination;
+    var startTime;
+    var frequency = 0;
+
+
+
 
 
 });
