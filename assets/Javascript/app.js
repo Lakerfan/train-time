@@ -101,4 +101,16 @@ database.ref().on("child_added", function(childSnapshot) {
   
   });
 
+    $(document).on("click", ".arrival", function() {
+    keyref = $(this).attr("data-key");
+    database.ref().child(keyref).remove();
+    window.location.reload();
+  });
+  
+    currentTime();
+  
+    setInterval(function() {
+    window.location.reload();
+  }, 60000);
+
 });
